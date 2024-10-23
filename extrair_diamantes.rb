@@ -16,8 +16,11 @@ def diamantes(entrada)
     contagem
 end
 
-puts "insira uma expressão para contagem dos diamantes: "
+expressao_teste = "<<.<<..>><>><.>.>.<<.>.<.>>>><>><>>"
+resultado_teste = diamantes(expressao_teste)
+puts "Quantidade total de diamantes na expressão teste é: #{resultado_teste}"
+
+puts "Agora insira uma expressão para contagem dos diamantes: "
 expressao = gets.chomp.to_s
 resultado = diamantes(expressao)
-
 puts "Quantidade total de diamantes na expressão é: #{resultado}"
